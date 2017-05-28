@@ -1,11 +1,11 @@
-# locust-cluster
+# docker-locust-cluster
 Runnning locust cluster on docker
 
 Build locust cluster using [ushios/locust](https://hub.docker.com/r/ushios/locust/) image.
 
 # Get started
 
-Fork or clone this repository and edit `http://localhost` in `docker-compose.yml`
+Fork or clone this repository and edit `http://localhost` in `docker-compose.yml` and `locustfile.py`.
 
 ```console
 $ docker-compose up -d
