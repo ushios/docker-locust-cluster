@@ -1,0 +1,28 @@
+version: '3'
+services:
+  master:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 18080:8089
+    entrypoint:
+      - locust
+      - --master
+      - --locustfile
+      - locustfile.py
+      - --host
+      - http://localhost
+  slave:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - master
+    entrypoint:
+      - locust
+      - --slave
+      - --locustfile
+      - locustfile.py
+      - --master-host
+      - master
