@@ -20,4 +20,4 @@ $ open http://localhost:18080
 $ docker-compose scale slave=10 # change to 10 slaves
 ```
 
-See also Loucst Documentation](http://docs.locust.io/en/latest/index.html)
+See also [Loucst Documentation](http://docs.locust.io/en/latest/index.html)
