@@ -5,6 +5,8 @@ Build locust cluster using [ushios/locust](https://hub.docker.com/r/ushios/locus
 
 # Get started
 
+Fork or clone this repository and edit `http://localhost` in `docker-compose.yml`
+
 ```console
 $ docker-compose up -d
 $ open http://localhost:18080
@@ -12,7 +14,7 @@ $ open http://localhost:18080
 
 # Documents
 
-## Change num of slaves
+## Change number of slaves
 
 ```console
 $ docker-compose scale slave=10 # change to 10 slaves
